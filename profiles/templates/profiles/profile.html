@@ -1,0 +1,26 @@
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <img id="logo" src="{% static 'logo.png' %}">
+    <title>{{ profile.user.username }}</title>
+    <nav>
+        <div>
+            <ul>
+                <li>
+                    <a href="{% url 'profiles:index' %}">Back</a>
+                </li>
+                <li>
+                    <a href="{% url 'index' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'lettings:index' %}">Lettings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>{{ profile.user.username }}</h1>
+    <p>First name: {{ profile.user.first_name }}</p>
+    <p>Last name: {{ profile.user.last_name }}</p>
+    <p>Email: {{ profile.user.email }}</p>
+    <p>Favorite city: {{ profile.favorite_city }}</p>
+{% endblock %}
