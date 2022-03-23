@@ -1,0 +1,113 @@
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #444;
+    background-color: #efefef;
+}
+
+#logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+h1
+{
+    margin-top: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+#link
+{
+    padding: 40px 0;
+    margin-left: 400px;
+}
+
+#link article
+{
+    width: 500px;
+    height: 270px;
+    float: left;
+    border-radius: 20px;
+}
+
+#link article:first-child
+{
+    margin-right: 20px;
+}
+
+.overlay
+{
+    background: rgba(255,255,255,0.75);
+    height: 85%;
+    width: 190px;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+article h2
+{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.button
+{
+    color: #fff;
+    background-color: #A22B02;
+    padding: 6px 20px;
+    border-radius: 3px;
+    margin-left: 45px;
+}
+
+.button:hover
+{
+    color: #fff;
+    background-color: #444;
+}
+
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+
+nav
+{
+    text-align: center;
+}
+
+nav div ul li
+{
+    display: inline-block;
+}
+
+nav div ul li a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+p
+{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.list
+{
+    text-align: center;
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 25px;
+    list-style-type: none;
+}
