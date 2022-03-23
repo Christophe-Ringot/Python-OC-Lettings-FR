@@ -1,0 +1,32 @@
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <title>Lettings</title>
+    <img id="logo" src="{% static 'logo.png' %}">
+    <nav>
+        <div>
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'profiles:index' %}">Profiles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Lettings</h1>
+    {% if lettings_list %}
+        <ul>
+        {% for letting in lettings_list %}
+            <li class="list">
+                <a href="{% url 'lettings:letting' letting_id=letting.id %}">
+                    {{ letting.title }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No lettings are available.</p>
+    {% endif %}
+{% endblock %}
