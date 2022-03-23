@@ -1,0 +1,24 @@
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+    <title>Holiday Homes</title>
+    <img id="logo" src="{% static 'logo.png' %}">
+    <h1>Welcome to Holiday Homes</h1>
+    <section id="link">
+        <article style="background-image: url({% static "profiles.webp" %}")>
+            <div class="overlay">
+                <h2>Profiles</h2>
+                <a href="{% url 'profiles:index' %}" class="button">click
+                    here</a>
+            </div>
+        </article>
+
+        <article style="background-image: url({% static "lettings.webp" %}")>
+            <div class="overlay">
+                <h2>Lettings</h2>
+                <a href="{% url 'lettings:index' %}" class="button">click
+                    here</a>
+            </div>
+        </article>
+    </section>
+{% endblock %}
